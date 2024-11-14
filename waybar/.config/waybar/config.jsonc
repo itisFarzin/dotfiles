@@ -1,7 +1,11 @@
 {
   "output": "DP-1",
   "layer": "top",
-  "modules-left": ["custom/arch", "hyprland/workspaces", "tray"],
+  "margin-top": 10,
+  "margin-bottom": 5,
+  "margin-right": 6,
+  "margin-left": 7,
+  "modules-left": ["custom/arch", "hyprland/workspaces", "hyprland/language", "tray"],
   "modules-center": ["clock"],
   "modules-right": ["bluetooth", "pulseaudio", "network"],
   "custom/arch": {
@@ -16,12 +20,19 @@
     "format-icons": {
       "active": "",
       "default": ""
-    }
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
+  },
+  "hyprland/language": {
+    "format": "  {}",
+    "format-en" : "EN",
+    "format-fa" : "IR"
   },
   "tray": {
     "tooltip": false,
-    "icon-size": 20,
-    "spacing": 5,
+    "icon-size": 22,
+    "spacing": 10,
     "show-passive-items": true
   },
   "clock": {

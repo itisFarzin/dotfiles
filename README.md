@@ -9,6 +9,11 @@ Waybar configurations are adapted from [m4xshen's dotfiles](https://github.com/m
 - File Manager: thunar
 - Launcher: wofi
 - Wallpaper Manager: waypaper
+- Clipboard: cliphist
+
+Notes:
+- I hardcoded my monitor specs in `hyprland.conf` and waybar's `config.jsonc` to ensure correct output and prevent waybar's crash after suspend
+- wofi-power-menu is from (szaffarano)[https://github.com/szaffarano/wofi-power-menu]
 
 
 Feel free to explore and use any parts that interest you!
