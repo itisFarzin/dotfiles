@@ -27,7 +27,7 @@
   "hyprland/language": {
     "format": "  {}",
     "format-en" : "EN",
-    "format-fa" : "IR"
+    "format-fa" : "FA"
   },
   "tray": {
     "tooltip": false,
@@ -49,7 +49,8 @@
       "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
     },
     "scroll-step": 1,
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
   "bluetooth": {
     "format": "<span color='#b4befe'></span> {status}",
