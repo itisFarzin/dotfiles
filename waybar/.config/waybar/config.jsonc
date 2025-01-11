@@ -1,17 +1,14 @@
 {
   "output": "DP-1",
   "layer": "top",
-  "margin-top": 10,
   "margin-bottom": 5,
-  "margin-right": 6,
-  "margin-left": 7,
   "modules-left": ["custom/arch", "hyprland/workspaces", "hyprland/language", "tray"],
   "modules-center": ["clock"],
   "modules-right": ["bluetooth", "pulseaudio", "network"],
   "custom/arch": {
     "format": "  ",
     "tooltip": false,
-    "on-click": "$HOME/.config/wofi/wofi-power-menu"
+    "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh"
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -26,8 +23,8 @@
   },
   "hyprland/language": {
     "format": "  {}",
-    "format-en" : "EN",
-    "format-fa" : "FA"
+    "format-en": "EN",
+    "format-fa": "FA"
   },
   "tray": {
     "tooltip": false,
@@ -36,12 +33,12 @@
     "show-passive-items": true
   },
   "clock": {
-    "format": "<span color='#b4befe'> </span>{:%H:%M}",
+    "format": "<span> </span> {:%H:%M}",
     "tooltip-format": "{:%e %B %Y}",
     "on-click": "calindori"
   },
   "pulseaudio": {
-    "format": "<span color='#b4befe'>{icon}</span> {volume}%",
+    "format": "<span>{icon} </span>  {volume}%",
     "format-muted": "",
     "tooltip": false,
     "format-icons": {
@@ -53,18 +50,18 @@
     "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
   "bluetooth": {
-    "format": "<span color='#b4befe'></span> {status}",
+    "format": "<span></span> {status}",
     // "format-disabled": "",
-    "format-connected": "<span color='#b4befe'></span> {num_connections}",
+    "format-connected": "<span></span> {num_connections}",
     "tooltip-format": "{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}   {device_address}",
     "on-click": "blueman-manager"
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "<span color='#b4befe'> </span>{essid}",
-    "format-ethernet": "{ipaddr}/{cidr} <span color='#b4befe'></span>",
-    "format-disconnected": "<span color='#b4befe'>󰖪 </span>No Network",
+    "format-wifi": "<span> </span> {essid}",
+    "format-ethernet": "{ipaddr}/{cidr} <span></span>",
+    "format-disconnected": "<span>󰖪 </span> No Network",
     "tooltip": false,
     "on-click": "nm-connection-editor"
   }
